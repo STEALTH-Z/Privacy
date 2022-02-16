@@ -1,0 +1,163 @@
+
+
+Staying Safe
+Get your tinfoil hats ready because security upgrades are coming!
+
+Privacy Checkers.
+Using one of the checkers below check that you're currently displaying a Tor IP address and that all scripts are disabled. If they're not that this is a privacy risk and you should continue to follow the advice below.
+
+https://whoer.net/
+
+Blocking Scripts Globally.
+
+When you first install Tor Browser bundle, scripts via NoScript are globally allowed. This is very dangerous to your privacy and should be turned OFF. you can right click the no script icon (S icon next to address bar) and select options,in general tab, uncheck the scripts globally allowed tab.
+
+Blocking Embeddings.
+
+After you do that, you need to block embedded scripts (which again are allowed by default) click on the S again and go to Options>Embeddings then click all the boxes to forbid Java, Flash, Silverlight, Plugins, <Audio/video>, Iframe, Frame and font-face and click OK
+
+Blocking Javascript directly. (about:config)
+
+After you have done this you still need to block JavaScripts in firefox in case Noscript ever fails to protect you, or another exploit comes to light in the future. To block Javascript in the Tor browser, Type about:config into the address bar, click 'yes you know what you are doing' scroll down (or type in the search box) javascript.enabled and change it to false by double clicking it.
+
+Blocking HTTP Referrer headers. (about:config) (Optional)
+
+Again Tor Project fail to have another security issue off by default. Referrers (for those that don't know) provide information to sites your visiting about what site you came from eg: the full internet address. This should be OFF to protect your privacy. If your not still the "about:config" option repeat what you did to block javascript by typing about:config in the tor browser address bar.
+Then Look for network.http.sendRefererHeader and double click on it and change the value from 2 to 0.
+Then look for extensions.torbutton.saved.sendSecureXSiteReferrer and change it from 'true' to 'false' by clicking on it.
+Lastly look for network.http.sendSecureXSiteReferrer and change it from its default of 'true' to 'false' again by clicking on the value.
+
+So next time you open up a link, it’ll block the referrer URL being passed on.
+
+Please Note: This is optional, and turning Referrers off may prevent you downloading from clouds.
+
+New Tor Browser Slider settings.
+
+The new slider options should also be changed. Click on the Onion icon at the top of tor browser for the drop down menu, and click "Privacy and security settings". ALL privacy boxes should be checked/ticked, and on the slider it should be set to 'high' for security level (by default is set as low).
+
+Plugins/Addons/P2P/Torrents/Webcam Sites.
+
+As stated already addons/plugins should be blocked and/or not installed at all. This includes 'DownThemAll' NONE are supported by the TorProject and ALL run the risk of bypassing the Tor Network and accessing the net directly, which runs the risk of leaking your real IP Address. Personally I'd rather have slower downloads and no knock on the door by LEA than faster downloads.
+
+Downloading.
+
+A lot of people keep asking about the download warning in Tor, when you click to download something your given a warning followed by two options, one is to OPEN the file, While the other is to SAVE it. You should NEVER pick the option to 'open', this would expose your real IP address (not Tor IP) to the website. So ALWAYS select Save and you remain hidden. If you go to Tor Browser Options (by clicking on the top left corner of your browser) Then go to Options>Options>Applications tab you can change the settings automatically. This will prevent you from accidentally opening a file in the browser instead of saving it. Since opening files will expose your IP address, you don't want to make that mistake. And change 'Portable Document Format (PDF)' from 'Preview in tor browser' to 'Save File' and click ok. You could also as the warning message says use a VM such as Tails to help protect your downloads even more.
+
+It's also worth saying some cloud/file host sites have a "downloader" (normally .Exe file), some of these are boxes already checked on the download page. Downloaders should NEVER be downloaded they contain spyware/malware and are optional, So uncheck the downloader boxes before attempting to download the main file. They will deanonymous users and infect computers with malware if downloaded and opened.
+
+A recent honeypot site also told users to download a "security scanner", to confirm they are using tor correctly. The "security scanner" was in fact a program that once the users ran grabbed file names of window users along with victims real MAC and IP address and sent back to the site owner. NEVER download programs from ANY sources like this, please use common sense, if it smells bad then step away...
+
+Tails.
+
+Tails is a live operating system, that you can start on almost any computer from a DVD, USB stick, or SD card. It aims at preserving your privacy and anonymity, and helps you to: use the Internet anonymously and circumvent censorship; all connections to the Internet are forced to go through the Tor network;
+leave no trace on the computer you are using unless you ask it explicitly; use state-of-the-art cryptographic tools to encrypt your files, emails and instant messaging.
+
+Its an extra layer of protection that a lot of people trust and use, to learn more go to tails.boum.org
+
+Whonix.
+
+An alternative to Tails and also an open source project. Whonix is an operating system focused on anonymity, privacy and security. It's based on the Tor anonymity network, Debian GNU/Linux and security by isolation. DNS leaks are impossible, and not even malware with root privileges can find out the user's real IP.
+
+Download from their official site only - whonix.org
+
+Shredding history/cache/cookies and other footprints left behind.
+
+If you do use CCleaner I would recommend going to Options> Settings then clicking on the drop down menu and selecting 'Complex Overwrite (7 passes)' and selecting 'secure file deletion'. And make sure all boxes are ticked on the 'Cleaner' tab on the main program screen. Tick all boxes on the 'Windows' and the 'Applications' Tab. Then hit 'Analyze and Run cleaner. I would recommend using this before connection to tor and after you left Tor, to wipe all cookies etc. I have also been told about a Add-on if you like, for ccleaner this addon adds 100s more applications/cache/history/log files to ccleaners applications list.
+I would advise caution when using CCEnhancer tho, its NOT supported by the company that makes ccleaner, so its not beta tested like ccleaner is. And its use may lead to bugs or errors with windows. I would suggest if your not an advanced user then just keep using ccleaner on its own. If you're an advanced user then CCEnhancer is great however not all on the new "application list" are even needed, so please read every application and check that its needed before checking its box in ccleaners app list. Some of the logs are simply screen resolution settings etc, and don't need to be removed to protect privacy and would mean having to set your screen resolution etc on every reboot. So read the warnings carefully, and remember no cleaning software can ever remove all traces all of the time.
+
+Ccleaner (for Reg Users)- piriform.com/ccleaner
+
+CCEnhancer (for Advanced Users) - singularlabs.com/software/ccenhancer
+(Put in same folder as cclearner is in, then click the 'download latest' button on CCEnhancer and then check the new application boxes in ccleaner).
+
+Alternative & open source programs -
+
+Eraser - eraser.heidi.ie
+
+BleachBit - bleachbit.sourceforge.net
+
+Accessing Tor on other devices.
+
+People keep asking if its safe to access Tor from phones/ipods and Tablets such as ipad, the answer is No.
+
+Yes there is software that allows you to connect to Tor from such devices, however its not full software and has a lot more weaknesses. Not to mention these type of devices have javascript/flash/silverlight and other software that can't be turned off, and well as backdoors and regularly send logs and check for app updates etc, again which have no settings to turn them off. Which mean's its highly likely at some point they will expose your real ip address, and even if you don't have the device registered or not registered in your name, they all send back GPS info to the makers servers. This info is (in most countries US/EU) legally kept for two years, so they know where you go, where you live,work or go to school. So ignore the BS developers who say these Tor apps are safe, because they're far from safe.
+
+Update: ALL apps have a secret personal embedded code when you download them from App stores. This information contains personal ID data which is available to all the developers of the apps you install on your device. The reason for this secret code/data is to prevent misuse/abuse of apps like chat or browser apps etc. For example say you get a bit too friendly on a dating app and post explicit images of yourself and the apps mods need to ban someone. They wont block the IP or registered email address, since they can be changed easy; They will block your phone itself with the help of this hidden code it contains a personal ID code for your app store ID as well as your phones serial code. This prevents people from simply using another email/IP address or simply deleting the app and downloading it again. But of course for security this is massive threat, since even if you're using whats meant to be anon service/app they will still have traceable information about your Apple account (which also has your ip address and probably in the case of a phone they will have your cellphone number logged even if the rest of the account info is fake) and phones personal serial code. I would also like to point out this is not just going on in apples store but ALL app stores on ALL devices, so again don't think you can ever be anon using apps even if the connection is meant to be anon/encrypted etc.
+
+Using Public/Hacked WiFi.
+
+Using someone else's WiFi connection technically is no less safer than using your own (if accessing both over Tor and following the norm security advice). keep in mind i only mean the encrypted data is no less safer on public connection, not the act of doing it. However I wouldn't advice using public or hacked WiFi for the following reasons.
+
+1. The connection would still be encrypted from the WiFi owner, but they could still work out where you were from from the WiFi signal strength. And they could also know that your using Tor (from the packets) as well as how much data you're using. Which could lead to them investigating you more closely. They will also get your MAC address (Physical Address) of your Ethernet adapter/and your devices name (auto logging process when you access someone Else's router), which could be used against you in court, if they ever get physical access to your computer.
+
+2. As said public places have the Public, I read 20+ news reports of people using public or hacked WiFi in public places as well as outside someones house (who's had their WiFi hacked) and been caught red handed by chance mostly.
+
+3. It came out last year that an encryption company ran a test on computer encryption and basically broke what was said to be the worlds strongest encryption. How? By simply using audio devices to LISTEN to the sounds the computers made while someone was inputting their encryption pass phase. Tho this would be unlikely to be used often even with the 100% success rate its claimed to have, and probably only used on terrorists under surveillance. However if you use the same public WiFi connections often and have raised suspicion in the past, its possible this new technique could be used against you. Which would basically render even full disk encryption useless. This only breaks computer encryption when inputting passwords for it and do not however break any tor encrypted data traveling over the WiFi.
+
+4. Another thing people forget about when accessing someones WiFi connection for illegal purposes is Cell Phones. And you can bet LEA will contact all phone companies to order a list of all phones that where on and in that area at the time (If a criminal investigation is started). Even if a person hasn't registered the phone itself the person can still be traced in many ways. The main being they know and log all a phones movements via their phone signals, they can determine where the person is living from those records alone. On top of that the phone company still retains ownership over the SIM card in peoples phones, so if a person has contacts saved on SIM card, the phone company can send that information back to themselves, thus getting peoples home phone numbers, work numbers etc. As well and more than likely being about to trace how the cellphone was topped up, eg where the person brought the credit from and with what method.. So the key point is don't have a cellphone with you if you use other peoples WiFi for illegal purposes, or if you do turn it off before going near the WiFi area. Keep in mind some older phones don't totally turn off when you switch them off, it's been said some older phone basically go into power saving mode and are still on and check for updates etc. So best not to bring them at all or remove the battery instead.
+
+Windows 8 is not recommended at all!
+
+All new Windows 8 machines contain a chip called Trusted Platform Module (TPM), this chip is meant to block access to software and hardware which could be harmful to your system or avoid software conflicts (that's the good news). The bad news is it also allows Microsoft FULL access to every Win 8 machine remotely, the chip cannot be turned off in win 8 nor will a firewall, anti-virus protect your system from Microsoft having full control over your system. Which of course means NSA and alike can also get access to machines/monitor cams, take screen shots and record users, undermine other security programs like encryption. The NSA tried making a backdoor chip (clipper chip), law years ago, meaning it would be illegal to own a machine without such a backdoor chip, however due to privacy the courts didn't allow this law to pass. And now with Windows 8 comes with the chip that does just what the NSA wanted. Its not law that you have to use it, so don't. If you doubt this or think I'm being paranoid have a read of this.
+
+rt.com/news/windows-8-nsa-germany-862
+
+Please Note: If you want to check if your PC has TPM chip you can hold the Windows button and press R. That should bring up the "Run" console. then type in "tpm.msc". Now you should have a form which tells you whether or not you have a TPM installed in your PC. Credit to Raykom @ H2TC for info.
+
+
+Media Players.
+
+When playing on topic stuff in your media player its recommended to be offline OR have that program blocked in your firewall from outgoing connections. Media players have a nasty habit of connecting directly to the internet (by passing tor network). They're normally checking for updates, but can also in some cases send back information including Real IP Address, file names, descriptions, and Hash codes of the files themselves. Some offer free built-in subtitle searches, which basically copy to hash code of the file your playing, send it to their server and they scan it for a match to provide subtitles. If you pick to block the media player instead of being offline while viewing topic stuff on it, don't forget to check for updates for the player (since blocking outbound connections will prevent auto updates).
+
+
+TOR Exit Nodes.
+
+All traffic over Tor is encrypted and ISP's cant see what your doing, however after your requests have been bounced around to the different tor nodes the last node/computer on the tor network your connected to (known as a Exit Node), can see the traffic in plain text. They Do NOT see your real IP Address, that is still hidden and was replaced with a tor ip from the first node (on connecting to the tor network you were given). But the exit node can find out where you have been, what sites you have been looking at and if you input usernames/passwords they can see them as well. Some exit nodes have no logs, some however are run by companies and people who actively record/log the exit node data. And of course it's known some exit nodes are run by Governments around the world. So keep in mind they can see the information you request however cannot see your real ip address. So its advised not to link your tor identity to your real identity, so NO shopping online or logging into your real email accounts etc. As from there they can see the information and link you to your real identity, or LEA can for example request your account information/ip address of the user who owns that Amazon/ebay/youtube/gmail or other accounts. They can only see this information if the connection was not over a https (encrypted), so if there is a second layer of encryption they cant view that information. However its always my advice to avoid using tor even over https connection to access accounts that could possibly be linked back to your real identity.
+
+
+Cookies - How NSA is using Cookies to Track Tor users?
+
+Let's suppose that there is a famous online shopping website, owned or controlled by NSA. When a normal user will open that website from his own real IP address, the website creates a cookie on the user ' browser and stores real IP address and other personal information about the user.
+When the same user will again visit the same NSA owned website, enabling Tor this time on the same browser - website will read last stored cookies from browser, which includes the user' real IP address and other personal Information. Further website just needs to maintain a database of Real IP addresses against the Tor Proxy enabled fake IP addresses to track anonymous users. More Popular the site is, More users can be tracked easily. Documents show that the NSA is using online advertisements i.e. Google Ads to make their tracking sites popular on the internet.
+
+How you can avoid Cookie tracking?
+
+One browser can't read the cookies created by other browser (As far as we know at the moment but this may change in the future, or become public). So Don't use Tor on the same browser, that you use for regular use with your real IP address. Only use the standard Tor Browser Bundle instead for Anonymous activities. You should always clear the cookies (with ccleaner or alike) after you’re done so any stored information, such as login information – will not be stored on that computer. If you're doing something very interesting, you should use Tor on a virtual machine with the live OS so that cookies and cache and other OS data are dumped when the machine is closed.
+
+Clearnet Warnings.
+
+Tor hidden services and Clearnet work differently.
+
+While accessing Tor hidden services over tor there is no Exit node (which could be used by malicious persons/governments).
+The connection is encrypted end to end if accessing tor hidden service over tor. And Instead of given an exit node you're given SIX tor relays.
+
+Now accessing a "clearnet" link over tor you DO use an exit node and there is no end-to-end encryption (the exit node see all non https data in plain text and can log it). And the relay numbers go down to three, entry node>mid relay>exit relay>Exit node.
+
+So whats the big problem? As long as you dont reveal personal information over tor the exit node is no real threat?
+
+The issue is IF an adversity control's the exit node and two of the relays your currently using the experts say you can be deanonimised and the subject's real IP address can be exposed to the adversity.
+To try to counter this threat The Tor project try to remove exit nodes that look like they could be malicious and or are using outdated software. Tor users are also given random tor relays and have exit nodes changed automatically every 10 minutes. This reduces the chances of a user ending up with possible malicious tor relays and exit nodes at the same time. But the risk is still real.
+
+Browser Fingerprinting.
+
+This is a problem area for us and impossible to completely migrate from. It's known that governments use browser fingerprints to try separate users. Even with tor browser the browser gives out a lot of information about it. For example.
+
+What fonts are installed, cookies, HTTP headers your browser sends, your current window size, current language of software used, version of software used, list of all installed plugins and their versions, list of all scripts allowed, changes in about config settings etc. All this information is still freely available and can be used to try to work out which particular user accessed this site or that site. Of course a lot of tor users are blocking Javascript etc (which they should) so that will make us/our browser settings look the same. The more users that have the same browser settings the better, but not everyone will have good OPSec. And will have plugins installed that will set them outside the crowd as well as risk IP exposure from those plugins. Browser Fingerprinting is current something people need to consider but it is over all a low level threat as long as you follow normal advice about scripts/plugins. And this information on its own is a threat to privacy but cant be used to expose peoples IP addresses unless for example they login to their clearnet accounts over tor and cookies expose that. But in that case exit nodes will already get that information if someone starts logging in to clearnet sites over tor. So overall something to keep in mind but not to worry about.
+
+Risks of Using different browsers at the same time.
+
+This comes up from time to time so worth adding. People ask if there a known threat/exploit to using another browser while using tor browser. The answer is yes and no. Currently there is no known technical threat. Tor browser is a standalone/independent browser and doesn't communicate with other browsers nor does it share cookie files. However the threat lies in human error while using two browsers at once. For example you could use one browser to login to your real email providers account over tor instead of over your normal browser. If you did this then of course that would link you tor ID to your real ID and IP address linked to your real accounts. Or indeed log into other sites/services that are linked to your ID.
+
+- One man made the mistake of pasting an illegal link he copied from an illegal site from tor browser over to his reg browser and on his FACEBOOK wall....
+
+- Lulzsec "Leader" SABU (Hector Monsegur) and later FBI informant also made the cross browser mistake. While up late one night he was using both Firefox and Tor Browser while he logged into lulzsec's IRC channel. Only problem after a few seconds he noticed the tor button was missing from the browser, and then he realized his mistake, he had logged into the channel using his firefox browser and not tor browser and leaked his real ip address to LE...
+
+- Many others had been busted because they downloaded illegal files from cloud services, where the links were posted on tor. But they used their normal browsers to download the files and not tor browser.
+
+Correlating two users together on the internet is easier than you think.
+
+Let's use YouTube for example. YouTube is owned by Google, Google tracks everything. YouTube keeps track of which IP addresses search for what videos, and tons of metadata about it’s users.
+When a link to a YouTube video is posted on tor boards, you will use your regular browser to watch it because Tor browser should have all scripts blocked at all times, so videos are unviewable. But the problem is, if a post on Tor was written on January 10, 2014 recommending a video, and this video only has 500 views, perhaps this video has been up for a few months and not very popular.
+
+And then within the few days that this article was posted, 50 people viewing the Tor forum watch this video. The number of views just went up in a short period of time.
+It is pretty easy to correlate that it is possible, that the people who watched that YouTube video, especially since it is not a popular video came from the Tor hidden service the link was posted on, and if you made the mistake of using your real IP address, you have now been added to a list of people of interest. And if you do this multiple times with different YouTube videos, then they start to see a pattern and before you know it, they are confident that you are coming to watch these videos from tor hidden service because every time a video is posted on tor, your IP address comes up to watch this video. And this method IS being used by LE to try to get peoples non-tor IP addresses.
