@@ -1,0 +1,158 @@
+
+
+Downloading Youtube videos safely.
+
+As stated above and many times you should NEVER view videos over tor or even legal videos posted on clearnet sites where the links were posted on TOR sites. But if you really do want a video from sites such as Youtube, you should instead use a third party site that requires ZERO scripts to be enabled. And it allows you to DOWNLOAD the video NOT view it in browser.
+
+Have seen this talked about a few times so to remind people about the risks of this. Tor2Web is basically a clearnet site/service that gives non-tor users access to Tor hidden services from a normal browser. However just to remind people this site gives no protection whatsoever to visitors, your accessing on clearnet so your ISP can see everything you do (which is legally logged for at least two years). No encrypting connection is given to visitors and the site doesnt even have a privacy policy in place so you don't even know if they themselves log searches. However they do give the following warning : WARNING: tor2web only protects publishers, not readers. As a reader installing Tor will give you much greater anonymity, confidentiality, and authentication than using tor2web. Using tor2web trades off security for convenience. I suggest following their advice and ONLY access tor services on Tor/TBB itself, for protection against logs/ and prying eyes from tracking cookies and ISP's/LEA. Also as a side note the leaked documents from NSA file named "Internet Anonymity 2011", names Tor2Web site as a target and communication on that site is being recorded by them already, so the threat to privacy while using tor2web is known to be real.
+
+VPNs/Proxies services (non-Tor).
+
+A virtual private Network (VPN) service basically are meant to do the same job as tor but offer faster speeds (normally), they're job is to replace your IP address with one of their own and encrypt your connection. The very important difference with VPNs vs Tor is that VPN know your real IP address, Tor does not. VPN's are required by law to hand over your information if demanded to do so by the courts. VPN services are also required by law in most counties to log users data, just like other ISPs are for currently a minimum of two years. So you see using VPN's for illegal purposes doesn't work as you would think. Some VPNs try to hide they keep no logs by saying 'We hold no content logs', content logs are basically all the URLs you visited and data you uploaded and downloaded while using the service. LEA don't need 'content logs' all they need and want are you persons IP address, and IP addresses are logged by law and not part of the 'content logs' the VPNs refer to. So they will and do mislead paying users, even lulzsec members (hacking group) got busted because they too trusted a VPN called 'HideMyAss'. 'HideMyAss' also claimed to have no logs, after they handed over IP addresses to the UK police who then handed over the data to the FBI, this VPN admitted it legally still had to keep ip address data. Some will also mislead people by saying they use IP-sharing services, meaning 10-100 customers will be given the same VPN IP address at the same time. So basically it may take LEA a bit longer to work out but even if the VPN uses shared ip-address services the people behind them can still be found out. So Tor is still your best bet for the reasons given, some people may use free VPNs AFTER connecting to tor, which means the VPN only ever gets your Tor ip address and since its free it holds no subscriber info as well. Keep in mind if you use tor with other proxies/VPNs then your connection speeds will be slower tho. NEVER trust VPNs or subscribe to them or connect to them before connecting to Tor. Some VPN services now ask for min details or even fake name, address etc and offer payments via Bitcoins etc. Again this is misleading since yet again they will and do by law keep your real IP address on record, which is all the LEA normally need or want to locate the person under investigation.
+
+Also like to remind 90% of VPNs hire the servers they use, so they don't have physical access to the servers they use. In which case no matter who they are or their privacy policy/log systems, the servers can still be logging without the VPNs knowledge. One such case I will refer people to is the case of EarthVPN who rent their servers instead of owning them (like thousands of VPNs do). Without the VPNs knowledge the owners of the servers were contacted by LEA and ordered to log the server and hand over the information to them about one of the VPNs users. The servers owners complied with the order and without telling the user nor EarthVPN, EarthVPN had no knowledge their "no log" servers were infact logging EVERYTHING. After the arrest of a dutch man and court case did EarthVPN become aware that the owners were logging the servers and feeding all info to LEA. Since they cant fully control the servers there is no way to stop this happening again with them or other VPNs. I'd also add NSA leaked files do hint that NSA and other goverments already have backdoors into VPN servers around the world.
+
+Accessing the internet via pre-paid aircards/USB sticks.
+
+Some may think using a pre-paid USB stick for internet connection instead of your normal ISP maybe safer. Sadly this is not the case and these pre-paid USBs are exploitable to reveal the location of the users since they use cell phone towers to gain internet access, just like cell phones they are traceable. During a case in 2008 it was revealed the FBI were trying to trace the location of a identity thief who was known to be using a 'air card' by Verizon. They tracked him down by 'calling' the card, it cant accept calls however since its setup like the old dial up routers, its designed to drop connection when it thinks there's an incoming call. With help from Verizon, they remotely reprogrammed the card to accept a fake call tower (after it tried to reconnect to the cell tower after the fake calls forced it to drop connection) run by the FBI. The fake tower was really a small device called a stingray, and once the card connects to it, the FBI could by moving the device closer to target and based on the signal strenth work out his location. So even if you can get hold on a pre-paid USB stick (even paying cash) they can still trace you, just like they can if you use a unregistered cell phone.
+
+Spyware/Malware protection (Windows Only).
+
+Of course you should have an anti-virus and firewall product updated and installed on your system, but as an extra layer of protection you should always have and use at least one spyware scanner program. I cant recommend software for other operating systems because i dont use them so wont recommend something i havent used. However if your not using windows I'd recommend doing a search yourselves and see whats out there for your operating system. As said spyware scanners are an extra layer of protection and often find things that could be a threat to your privacy that a AV product wont. If your only going to use one I'd say malwarebytes is currently the best free anti-malware product available for windows at the moment. Spy-Bot used to be the best years ago and i used to love it, however since they started doing a paid for version as well as a free one, the free one is more bloated and doesn't ofter the same detection rates it used to.
+
+Malwarebytes Anti-Malware - malwarebytes.org/downloads/
+System requirements: Windows 8.1®, Windows 8®, Windows 7®, Windows Vista®, Windows XP® (32-bit, 64-bit)
+
+Spybot - Search & Destroy - safer-networking.org/mirrors/
+Available on Windows 7/8/Vista/XP
+
+Please note: You should use any spyware scanner while Offline. Always backup registry before removing suspect files with anti-malware products and send items to Quarantine instead of deleting suspect files. Spyware scanner's do often result in a lot of false positives, so you may need to recover files that may have been ID'ed as Malware by mistake. So always use caution when using products like this, just as you would with registry cleaners and alike. Also if you use keygens or hacking software (port scanners etc) just like AV software spyware/malware scanners will normally flag/give false positives for such software/programs.
+
+FULL disk Encryption (FDE).
+
+I would recommend Truecrypt to encrypt your Whole hard disk. TrueCrypt doesn't offer full disk encryption for Linux only containers, in which case for Linux users use Linux Unified Key Setup (LUKS) instead for full encryption. Full hard drive encryption will encrypt all files on your HDD (doh) but that also includes all deleted files as well. If you have files deleted that were not shredded/overwritten before installing Truecrypt then you need to run the 'free space' shredder option. This option will come up during the encryption process when using the program to encrypt your drive for the first time. There are step by step instructions how to use the full disk encryption on the net. Again full disk encryption can be used to encrypt everything including any footprints/history/cache etc (which is good), some people only bother to use encrypted 'containers', which will NOT encrypt logs and other footprints by itself.
+
+I'd advice anyone who has encrypted their drives with AES-only encryption to change the type of encryption used as a precaution. Truecrypt and alike allow you to use different types of encryption when encrypting drives, at the moment the combo of AES/Twofish-Serpent Algorithm is probably the strongest to use. Keep in mind if you do opt for combo algorithm then its safer, however the reading/writing of that disk will be slower since it has more work to do by encrypting/decrypting data (which is why most just use AES because it was strong years ago and fast). Also that even if they could break AES as well as SSL (which has not been confirmed nor mentioned by Snowden only SSL), I doubt they would use this crack very often against AES. I'm guessing like with other things, this would only be used against top level targets like drug lords/ other counties communications or terrorists than us, to prevent public knowledge that they could break AES.
+
+(Windows/Mac Users) Truecrypt NEW fork site (after the Devs stopped development) truecrypt.ch
+(Linux Users) Linux Unified Key Setup (LUKS) - code.google.com/p/cryptsetup
+
+Also a side note there is only one loophole in Truecrypt, and that's one option is not on as default. This can be manually changed/corrected in seconds. After installing the prog and installing the full disk encryption, click on the TrueCrypt icon task manager click on Settings>Preferences then tick the boxes 'user logs off','Screen Saver is launched' and 'Entering Power saving mode' and click ok. This now means that Truecrypt will also encrypt/protect the hibernate file (which could store/leak passwords).
+
+EDIT: Windows Hibernate file can save things in memory like passwords and usernames (even TrueCrypt password) to the hibernate file in plain text (unencrypted). You can turn the Hibernate file off in Windows altogether for extra safety. Press Windows button then type 'cmd', cmd should pop up in the programs list then right click it and select 'Run as Administrator'. Then type 'powercfg /hibernate off' this should turn the hibernate file off, Credit to TP @ BV4.
+
+Please remember when I'm talking about disk encryption I'm talking about FULL disk encryption. Whereby the whole drive is encrypted including any operating system installed and its files. Do NOT use containers nor put any trust in them, encrypted containers are useless for our needs and give a false sense of security. Containers are basically encrypted partitions, where only part of the disk is set aside to be encrypted leaving everything outside of it unencrypted/plaintext. The problem with this is when a file is accessed on a drive, cache and other copies of the file are saved OUTSIDE of the encrypted containers. So evidence WILL remain in unencrypted form outside of the container for others to see/recover. And cache files have and will be found and used against you.
+
+Some people say they use containers for plausible deniability reasons. For example They create one encrypted container and then create another one inside the first with a different pass-phase. They put their private files in the second hidden container and less private data in the first container. So if someone (LEA) asks/demands for the encryption key for the container the user can give out the encryption key to only the first container and say there is nothing illegal in it. And the second hidden container is still encrypted. The problem with this tactic now-a-days is LEA know and look for hidden containers and simple maths will prove there is another hidden container. For example the container is said by the OS to be a 100GB partition yet the forensic team sees only 50GB of data within it, so it should have 50GB free-space, they fill the container with random data on a copy of the HDD/SDD. They discover after putting files in it that the contain is full even though they only added 10GB, in which case it only holds 60GB of data but the partition is 100Gb. And that means they know there is another hidden container partition that could be holding another 40Gb of data, and that plausible deniability goes out the window. And as said above already data downloaded/saved to the containers will already have been copied by the operating system history/cache files OUTSIDE both containers in any case. So avoid containers and instead use full disk encryption instead.
+
+Anon Email.
+
+In some cases you may wish to have a email account you use on tor. Nearly all sites i know on tor you can input a fake email address as they dont need to be verified. But if you do need one then make sure you can create it over tor with ALL scripts blocked still. Dont use any mail porvider that requires a program to be installed, or scripts/iframes to be enabled in the browser. Never access your tor only email account from your real ip address, always access it over tor so you dont link it to your real ID. Never use it for ANYTHING that could be linked back to you. Consider EVERYTHING you say in email (even encrypted by providers) to be accessible by them. Never give out any personal information to anyone at any stage. You want a provider that cant be issued a warrant by LEA, so the email's cant be grabbed by them with ease. So this rules out all clearnet hosts no matter which country they're being hosted.
+
+People still are using mail providers like hush-mail and safe-mail.com thinking the information is safe. Hush-mail encrypt the emails but can also decrypt it as well for LEA (and they're legally required to). Safe-mail.com are located in Israel a close ally to the US, they've already admitted that their courts have to comply to warrants sent from the US. So even though they're not located in the US, they are no safer then using gmail.
+
+Currently two mail providers that covers most bases. They're tor based, does not req personal information or another email account, does NOT need another program or scripts/iframes to be enabled.
+
+Mail2Tor - mail2tor2zyjdctd.onion (Currently Down July 2015)
+
+SIGAINT - sigaintevyh2rzvw.onion (open a free account with 50mb of free storage and not a paid for one)
+
+Note: An attack against SIGAINT happend in April 2015 trying to use a man-in-the-middle attack against their servers. Seventy exit nodes were used in the attack (Which failed), Tor project believe with seventy exit nodes involved, then this attack was likely from a government agency. The exit nodes were removed from tor as exit nodes, after they were reported to the tor project team. Depending on how you look at this news, this is a good thing. To me it says NSA/GCHQ (or whoever the government agency was) cant get access to SIGAINT servers and shows they're currently secure. Bad luck NSA!
+
+Gpg - Email/Messages Encryption.
+
+To make messages more private you could also use encryption for email's which will prevent the email provider ever getting access to the content of the emails you send. The email account to and from metadata is still accessible to the mail providers still however. These are open source.
+
+For Windows users there is Gpg4win - gpg4win.org
+
+When installing gpg4win you get the option to install which programs you want from the package. By default, GPA is not checked. MAKE SURE YOU CHECK GPA! You need it in order to easily encrypt and decrypt messages.
+
+To decrypt a message, you need the other person’s public key. This can usually be found on their profile of whatever website or super secret message board you’re a part of.
+
+To lay it out simple.
+
+To encrypt:
+1) type message
+2) encrypt it using an imported public key of the person you are sending to
+3) SIGN IT (makes it secure) with your private key
+4) you can never decrypt it, only the person whose public key you encrypted it with can decrypt it
+———–
+To decrypt:
+1) paste encrypted message and encrypted signature
+2) select their public key as well as your private key
+3) view the message
+
+For Linux users you can get Gpg using the commands
+
+sudo apt-get install gnupg
+gpg --gen-key
+
+Create a Revocation Certificate
+
+You need to have a way of invalidating your key pair in case there is a security breach, or in case you lose your secret key. There is an easy way of doing this with the GPG software.
+
+This should be done as soon as you make the key pair, not when you need it. This revocation key must be generated ahead of time and kept in a secure, separate location in case your computer is compromised or inoperable. Type: gpg --gen-revoke your_email at address.com (replace 'at' with '@')
+
+More instuctions are freely available online if needed.
+
+
+Archives.
+
+For the purposes of sharing files archives are normally used. Open Source software should be used and not winzip or other risky closed sourced programs (all programs should be blocked from outgoing connections in firewalls to prevent IP address or other leaks). Winzip is bad for a number of reasons, its a target for exploits, its closed sourced, it doesnt encrypt file names etc. For these reasons its banned as a archive source by nearly all deepweb sites, or its use is discouraged.
+
+7-Zip is used by most on Tor for extra safety - its open source and is available for both Linux and Windows users, it has an encryption option (which also encrypts filenames).
+
+7-zip.org - (currently unavailable to mac users).
+When encrypting archives with 7Zip remember to check the box 'Encrypt File names' as well before encrypting them.
+
+
+Phishing.
+
+Recent events with Phishing attacks have highlighted the dangers of such an attack. Phishing is basically cloning well known sites and to try to trick people to use the cloned site instead of the real one. Whereby they can steal login information from victims. We have seen this done on hiddenwiki where real links have been replaced with fake/clone sites URLs, and just recently a deepweb search engine was found to also have been cloned and contained around 500 links to Phishing sites. Normally the main targets are sites that are linked to bitcoins etc so the attackers can stealth victims bitcoins. But this kind of attack can be targeted against anyone and any site. So make sure you're visiting the real sites by bookmarking the URLs to avoid possible Phishing sites, and using different passwords for different sites used.
+
+Chat Programs.
+
+Of course Skype and other normal chat clients we now know since NSA leaks are completely monitored and logged including images and audio, IP addresses, time and data of communication and with whom as well as other metadata. So for safer private communication there is really only two programs, that can help against metadata collection and give a better level of privacy. Although these programs are very basic they are used over tor, however since tor can't protect Video or Audio communications, these programs dont allow video calls to keep users IP's secret.
+
+Tor Chat 2 - github.com/prof7bit/TorChat
+
+Since Tor chats development has all be it stopped or hasnt been updates for some years after installing it you will need to update it. These instructions below MUST be followed EVERYTIME tor browser bundle is updated, this will update TorChats files to keep it more secure.
+
+Torchat suggests to all windows users to upgrade tor engine inside torchat each time a new tor browser is released following these simply instructions:
+1. Close TorChat
+2. Download the offical Tor Browser Bundle from Tor Project
+3. Extract Tor Browser Bundle to: c:\
+4. Copy: C:\Tor Browser\Tor\tor.exe to c:\TorChat\bin\Tor\
+5. Copy: C:\Tor Browser\Tor\libeay32.dll to c:\TorChat\bin\Tor\
+6. Copy: C:\Tor Browser\Tor\libevent-2-0-5.dll to c:\TorChat\bin\Tor\
+7. Copy: C:\Tor Browser\Tor\libssp-0.dll to c:\TorChat\bin\Tor\
+8. Copy: C:\Tor Browser\Tor\ssleay32.dll to c:\TorChat\bin\Tor\
+9. Copy: C:\Tor Browser\Tor\zlib1.dll to c:\TorChat\bin\Tor\
+10. Start TorChat: c:\TorChat\bin\torchat.exe
+
+
+OR
+
+ricochet which can be downloaded at - github.com/ricochet-im/ricochet
+
+As always dont let anyone lead you off tor or to open files that could be a danger. Never give out personal information even to someone you THINK you can trust. This includes NEVER telling people who you work for or hobbies/intrests you may have offline. A small amount of info like Country, age, and one intrest or product you've 'liked' on FB can lead someone to find you on Facebook,Linkedin etc and expose you. This is a REAL threat and has happend to people already within the community, social engineering is something people can be very good at.
+
+I'd also mention there are directories where people openly post their torchat IDs on, to chat with others with the same intrests. I would advice against posting IDs publically like this even though your IP address is secret using these programs, by posting your torchat ID pubically you could make yourself a target for possible exploits.
+
+Hidden services security.
+
+Now I'm not going to claim i know a hell of alot about running a hidden service, because I don't. However one mistake i see far too often by Hidden Services is a common fail that continues to be a risk to operators and their members, and that is the server-status command.
+
+If this feature is left on it can be viewable to visitors and could include the servers real ip address and hosting companies other details.
+
+- SR1 revealed their ip address during the early stages of the site and had to migrate servers twice because of it and after being blackmailed...
+- Kiss marketplace's servers IP was exposed.
+- AnonHosting (and all services they hosted) also failed to protect their servers ip address because of this command.
+
+A second threat to Hidden services that you should be aware of is the HSDir. Its far too easy currently for someone to take over a hidden services HSDir, and only takes fours days to become one. This attack was used against Facebooks hidden service as an example, and the attackers took over all but one of facebooks HSdir. Tor project are aware of this issue and their advice to Hidden services is to become your own HSdir, they go on to say they will be working on hardening HSdir sometime in 2015/16. With the aim of making a next generation of hidden services.
+
+
+Windows 10
+Completely out of the question. Its NSA-s wet dream.
+
+Try to read everything I wrote because it could save you years at the SHU (Special Housing Unit).
